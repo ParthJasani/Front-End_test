@@ -1,0 +1,35 @@
+body {background: #eee;}
+.before-after-main-wrap{
+    position:relative;
+    margin:20px auto;
+    overflow:hidden;
+    width:800px;
+    height:450px;
+}
+.slider{
+    position:absolute;
+    top:calc(50% - 16px);
+    left: 100%;
+    background: url(https://i.imgur.com/ImtbhIo.png) no-repeat #000;
+    background-position: center;
+    width:32px;
+    height:32px;
+    cursor:pointer;
+    padding:5px;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+#before,#after{
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    background: url('../img/car.jpg') no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+#before{z-index: 1;}
+#after {
+    width: 100%;
+    filter: grayscale(1);
+}
